@@ -1,0 +1,244 @@
+{
+  "d_model": 64,
+  "heads": 4,
+  "max_tokens": 24,
+  "tokens": [
+    "<pad>",
+    "<bos>",
+    "<sep>",
+    "<eos>",
+    "what",
+    "color",
+    "is",
+    "the",
+    "object",
+    "?",
+    "shape",
+    "where",
+    "describe",
+    "image",
+    ".",
+    "a",
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "circle",
+    "square",
+    "triangle",
+    "on",
+    "left",
+    "center",
+    "right"
+  ],
+  "questions": {
+    "color": "what color is the object ?",
+    "shape": "what shape is the object ?",
+    "position": "where is the object ?",
+    "describe": "describe the image ."
+  },
+  "weights": {
+    "vision.0.weight": {
+      "offset": 0,
+      "length": 432,
+      "shape": [
+        16,
+        3,
+        3,
+        3
+      ]
+    },
+    "vision.0.bias": {
+      "offset": 432,
+      "length": 16,
+      "shape": [
+        16
+      ]
+    },
+    "vision.2.weight": {
+      "offset": 448,
+      "length": 3456,
+      "shape": [
+        24,
+        16,
+        3,
+        3
+      ]
+    },
+    "vision.2.bias": {
+      "offset": 3904,
+      "length": 24,
+      "shape": [
+        24
+      ]
+    },
+    "vision.4.weight": {
+      "offset": 3928,
+      "length": 6912,
+      "shape": [
+        32,
+        24,
+        3,
+        3
+      ]
+    },
+    "vision.4.bias": {
+      "offset": 10840,
+      "length": 32,
+      "shape": [
+        32
+      ]
+    },
+    "visual_projector.weight": {
+      "offset": 10872,
+      "length": 32768,
+      "shape": [
+        64,
+        512
+      ]
+    },
+    "visual_projector.bias": {
+      "offset": 43640,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "embedding.weight": {
+      "offset": 43704,
+      "length": 1728,
+      "shape": [
+        27,
+        64
+      ]
+    },
+    "position_embedding.weight": {
+      "offset": 45432,
+      "length": 1600,
+      "shape": [
+        25,
+        64
+      ]
+    },
+    "block.ln1.weight": {
+      "offset": 47032,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "block.ln1.bias": {
+      "offset": 47096,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "block.qkv.weight": {
+      "offset": 47160,
+      "length": 12288,
+      "shape": [
+        192,
+        64
+      ]
+    },
+    "block.qkv.bias": {
+      "offset": 59448,
+      "length": 192,
+      "shape": [
+        192
+      ]
+    },
+    "block.attn_out.weight": {
+      "offset": 59640,
+      "length": 4096,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "block.attn_out.bias": {
+      "offset": 63736,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "block.ln2.weight": {
+      "offset": 63800,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "block.ln2.bias": {
+      "offset": 63864,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "block.fc1.weight": {
+      "offset": 63928,
+      "length": 8192,
+      "shape": [
+        128,
+        64
+      ]
+    },
+    "block.fc1.bias": {
+      "offset": 72120,
+      "length": 128,
+      "shape": [
+        128
+      ]
+    },
+    "block.fc2.weight": {
+      "offset": 72248,
+      "length": 8192,
+      "shape": [
+        64,
+        128
+      ]
+    },
+    "block.fc2.bias": {
+      "offset": 80440,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "final_norm.weight": {
+      "offset": 80504,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "final_norm.bias": {
+      "offset": 80568,
+      "length": 64,
+      "shape": [
+        64
+      ]
+    },
+    "lm_head.weight": {
+      "offset": 80632,
+      "length": 1728,
+      "shape": [
+        27,
+        64
+      ]
+    },
+    "lm_head.bias": {
+      "offset": 82360,
+      "length": 27,
+      "shape": [
+        27
+      ]
+    }
+  },
+  "parameters": 82387,
+  "validation_token_accuracy": 0.9990588235294118,
+  "training_checkpoint_epoch": 15
+}

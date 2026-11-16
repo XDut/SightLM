@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#0c1120"/>
+<title>MiniVLM Lab — Scratch-Trained Browser AI</title>
+<link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="MiniVLM Lab home"><span class="brandMark">M<span class="dot">·</span></span><span>MiniVLM <span class="brandLight">Lab</span></span></a>
+    <div class="headerRight"><span class="capsule"><span class="pulse"></span> LOCAL-FIRST AI</span><span class="subtitle">No model API · No server-side inference</span></div>
+  </header>
+  <main>
+    <div class="intro"><div class="eyebrow">PROJECT 01 / MULTIMODAL LEARNING</div><h1>Small model.<br><em>Real understanding.</em></h1><p>Meet a tiny vision-language model trained entirely from random initialization with PyTorch. A CNN reads an image; a causal Transformer answers questions. Inference stays in your browser.</p></div>
+    <div class="metrics">
+      <div class="metric"><div class="metricLabel">MODEL PARAMETERS</div><div id="paramCount" class="metricValue">—</div></div>
+      <div class="metric"><div class="metricLabel">INFERENCE BACKEND</div><div id="backend" class="metricValue smaller">Loading</div></div>
+      <div class="metric"><div class="metricLabel">VALIDATION TOKEN ACC.</div><div id="acc" class="metricValue">—</div></div>
+      <div class="metric"><div class="metricLabel">LATEST RESPONSE</div><div id="lastLatency" class="metricValue">—</div></div>
+    </div>
+    <div class="workspace">
+      <section class="panel visualPanel"><div class="panelHeader"><span class="sectionNumber">01</span><div><h2>Visual input</h2><p>Create a sample or upload your own image</p></div></div>
+        <div id="stageWrap" class="stageWrap" data-uploaded="false"><div class="gridOverlay"></div><canvas id="stage" width="32" height="32" aria-label="32 by 32 pixel sample image"></canvas><div class="stageCorner">32 × 32</div></div>
+        <div id="imageStatus" class="imageStatus">Rendering sample…</div>
+        <div class="actionRow"><button id="drawButton" class="secondary">↻ Generate random sample</button><label for="upload" class="uploadButton">↑ Upload image</label><input id="upload" type="file" accept="image/*" hidden /></div>
+      </section>
+      <section class="panel chatPanel"><div class="panelHeader"><span class="sectionNumber">02</span><div><h2>Ask the model</h2><p>Autoregressive tokens, generated on your device</p></div></div>
+        <div class="promptLabel">SUGGESTED QUESTIONS</div>
+        <div class="suggestions"><button data-task="describe" class="suggestion">Describe image</button><button data-task="color" class="suggestion">What color?</button><button data-task="shape" class="suggestion">What shape?</button><button data-task="position" class="suggestion">Where is it?</button></div>
+        <label class="promptLabel" for="question">YOUR QUESTION</label><div class="questionRow"><input id="question" type="text" spellcheck="false" autocomplete="off" aria-label="Question about the image"/><button id="askButton" disabled>Ask model <span aria-hidden="true">↗</span></button></div>
+        <div class="answerBox"><div class="answerTop"><span><i class="answerIndicator"></i> MODEL RESPONSE</span><span class="responseBadge">GENERATED</span></div><div id="answer" class="answerText">Choose an example, then ask a question.</div><div id="replyMeta" class="replyMeta">Your model stays local</div></div>
+        <div class="limitation"><div class="infoIcon">i</div><div><b>Honest model scope</b><p>This is a constrained, scratch-trained research prototype, not a general-purpose photo chatbot. It recognizes one colored circle, square, or triangle at left, center, or right. Arbitrary images and questions are out of distribution.</p></div></div>
+      </section>
+    </div>
+    <section class="technical"><div class="techTitle"><span class="sectionNumber">03</span><h2>Under the hood</h2></div><div class="steps"><div><span class="step">01 / VISION</span><h3>Custom CNN</h3><p>Three learned strided convolutions convert RGB pixels into visual features.</p></div><div><span class="step">02 / FUSION</span><h3>Image prefix</h3><p>A learned projection maps the visual embedding into language-token space.</p></div><div><span class="step">03 / LANGUAGE</span><h3>Causal Transformer</h3><p>Masked attention predicts one output token at a time.</p></div><div><span class="step">04 / RUNTIME</span><h3>WebGPU + JS</h3><p>Handwritten WGSL compute shaders accelerate convolution and linear layers. CPU fallback included.</p></div></div></section>
+    <div class="footerRow"><div id="status" class="status">Initializing model…</div><button id="reloadButton" class="linkButton" disabled>Switch WebGPU / CPU</button></div>
+  </main>
+  <footer>Scratch-trained MiniVLM · Open architecture · Local inference · Educational visual domain</footer>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

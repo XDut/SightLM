@@ -1,0 +1,10 @@
+{
+  "name": "minivlm-browser",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A scratch-trained CNN + Transformer VLM with handwritten browser WebGPU and CPU inference engines",
+  "scripts": {
+    "test": "node tests/check_parity.mjs"
+  }
+}

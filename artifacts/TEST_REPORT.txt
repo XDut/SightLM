@@ -1,0 +1,26 @@
+MINIVLM LAB - VALIDATION REPORT
+======================================================================
+MODEL: CNN + one-block, four-head causal Transformer trained from random initialization
+CONSTRAINT: Images of one red/blue/green/yellow geometric shape only
+
+Model parameters: 82387
+Best held-out teacher-forced answer-token accuracy: 99.906%
+Independent greedy exact-match evaluation (80 new images / task):
+  color        79/80 (98.75%)
+  shape        79/80 (98.75%)
+  position     80/80 (100.00%)
+  describe     79/80 (98.75%)
+
+Browser Canvas controlled combinations (36 combinations x 4 tasks):
+  color        36/36
+  shape        36/36
+  position     36/36
+  describe     36/36
+
+Python vs JS CPU numerical test: PASSED
+Chromium JS CPU inference: PASSED
+Browser page screenshot: GENERATED
+WebGPU GPU hardware path: NOT TESTED (no secure GPU-capable browser origin available in this sandbox)
+Browser static server navigation: NOT TESTED (sandbox blocked local host navigation)
+
+Do not interpret synthetic-domain results as general image understanding.

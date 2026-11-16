@@ -1,0 +1,4 @@
+# Training and evaluation ONLY (no Python dependencies for browser model inference)
+torch>=2.0
+numpy>=1.24
+Pillow>=9.0

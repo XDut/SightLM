@@ -1,0 +1,39 @@
+{
+  "greedy_exact_match": {
+    "color": 0.9875,
+    "shape": 0.9875,
+    "position": 1.0,
+    "describe": 0.9875
+  },
+  "correct": {
+    "color": 79,
+    "shape": 79,
+    "position": 80,
+    "describe": 79
+  },
+  "total": {
+    "color": 80,
+    "shape": 80,
+    "position": 80,
+    "describe": 80
+  },
+  "failures": [
+    {
+      "expected": "square.",
+      "got": "circle.",
+      "task": "shape"
+    },
+    {
+      "expected": "a blue square on the right.",
+      "got": "a blue circle on the right.",
+      "task": "describe"
+    },
+    {
+      "expected": "red.",
+      "got": "yellow.",
+      "task": "color"
+    }
+  ],
+  "examples": 80,
+  "elapsed_s": 0.51
+}

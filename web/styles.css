@@ -1,0 +1,89 @@
+:root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e6eaf2;background:#0b1020;font-synthesis:none}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -35%,#1b2a46 0%,#0b1020 60%);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}.app{max-width:1220px;margin:auto;padding:0 34px}.topbar{height:84px;border-bottom:1px solid #283248;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;gap:12px;align-items:center;color:#f2f5fb;text-decoration:none;font-weight:750;font-size:19px;letter-spacing:-.6px}.brandMark{font-weight:900;color:#0a1420;background:#8ce9cc;padding:7px 10px;border-radius:12px;line-height:1;font-size:21px}.dot{color:#347d70}.brandLight{font-weight:350}.headerRight{display:flex;align-items:center;gap:17px}.capsule{font-weight:700;font-size:10px;letter-spacing:1.5px;border:1px solid #275b51;background:#13372f;padding:10px 13px;border-radius:999px;color:#95f0c7;white-space:nowrap}.pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:#87e7bd;margin-right:5px;box-shadow:0 0 9px #8aeec4}.subtitle{font-size:12px;color:#8995a9}.intro{padding:55px 0 35px;max-width:770px}.eyebrow,.promptLabel{color:#8ce6c1;letter-spacing:2.15px;font-size:10px;font-weight:700}.intro h1{font-size:clamp(44px,5.9vw,75px);letter-spacing:-4px;line-height:1.07;margin:18px 0 22px;font-weight:750}.intro h1 em{font-style:normal;color:#96e9c7}.intro p{color:#a3afc0;max-width:680px;font-size:15px;line-height:1.8;margin:0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:21px}.metric{background:#121b2d;border:1px solid #263247;border-radius:13px;padding:20px 22px}.metricLabel{color:#8294ab;font-size:10px;font-weight:700;letter-spacing:1.2px;margin-bottom:13px}.metricValue{font-size:25px;font-weight:690;letter-spacing:-.9px;white-space:nowrap}.metricValue.smaller{font-size:21px}.workspace{display:grid;grid-template-columns:1fr 1.12fr;gap:18px}.panel{border:1px solid #273247;background:#111a2b;border-radius:15px;padding:25px;min-width:0;box-shadow:0 15px 45px #01060c33}.panelHeader{display:flex;gap:14px;align-items:flex-start;margin-bottom:23px}.sectionNumber{background:#193d39;border:1px solid #31665e;color:#93ebd1;min-width:32px;height:32px;display:grid;place-items:center;border-radius:9px;font-size:11px;font-weight:800}.panelHeader h2,.technical h2{font-size:19px;margin:-1px 0 5px;font-weight:680;letter-spacing:-.5px}.panelHeader p{font-size:12px;color:#8e9cb2;margin:0}.stageWrap{position:relative;display:grid;place-items:center;background:linear-gradient(135deg,#1d2a3d,#182437);border:1px solid #2c3c54;border-radius:12px;min-height:290px;overflow:hidden}.gridOverlay{position:absolute;inset:0;background-image:linear-gradient(#e9f0fd05 1px,transparent 1px),linear-gradient(90deg,#e9f0fd05 1px,transparent 1px);background-size:22px 22px}.stageWrap canvas{width:240px;height:240px;border-radius:8px;image-rendering:pixelated;box-shadow:0 18px 48px #030a1766;z-index:1}.stageCorner{position:absolute;right:13px;bottom:11px;font-size:10px;letter-spacing:1px;color:#647995}.imageStatus{text-align:center;margin:13px 0 19px;color:#8b9bb1;font-size:11px}.configRow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.field{min-width:0}.field label{display:block;color:#91a1b7;letter-spacing:1px;font-size:10px;font-weight:700;margin:0 0 8px}.field select{width:100%;background:#1b2739;color:#e5ebf4;border:1px solid #31415a;border-radius:8px;padding:11px 9px;outline:none;font-size:12px}.actionRow{display:flex;gap:9px;margin-top:18px}.secondary,.uploadButton{display:inline-block;border:1px solid #33455d;border-radius:9px;background:#1b283b;color:#e4eaf3;text-align:center;padding:11px 12px;font-size:12px;font-weight:610;flex:1;transition:background .2s}.secondary:hover,.uploadButton:hover{background:#25334a}.promptLabel{display:block;color:#99a7b9;letter-spacing:1.2px;margin:5px 0 12px}.suggestions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}.suggestion{border:1px solid #31435a;background:#1b2739;color:#b3c0d2;padding:9px 11px;border-radius:999px;font-size:11px}.suggestion:hover,.suggestion.active{border-color:#5fba9b;color:#b3f4d7;background:#244338}.questionRow{display:flex;gap:8px}.questionRow input{flex:1;min-width:0;padding:14px 12px;border:1px solid #324157;background:#1b2738;border-radius:10px;color:#ecf3fb;outline:none;font-size:13px}.questionRow input:focus{border-color:#85d9b5}.questionRow button{border:0;border-radius:10px;background:#9be9c5;color:#0a231c;font-size:12px;font-weight:800;padding:0 17px;white-space:nowrap}.questionRow button:hover{background:#b5f5d9}.answerBox{margin-top:26px;min-height:240px;display:flex;flex-direction:column;background:#0c1525;border:1px solid #2a3b50;border-radius:12px;padding:22px}.answerTop{display:flex;justify-content:space-between;gap:8px;color:#8c9cb0;font-size:10px;font-weight:780;letter-spacing:1px}.answerIndicator{display:inline-block;width:7px;height:7px;border-radius:50%;background:#8be5c0;margin-right:7px}.responseBadge{color:#77c4ab}.answerText{font-size:24px;letter-spacing:-.5px;font-weight:550;line-height:1.5;margin:31px 0 25px;flex:1;overflow-wrap:anywhere}.replyMeta{font-size:11px;color:#8495ab}.limitation{margin-top:21px;display:flex;align-items:flex-start;gap:10px;color:#92a0b5;font-size:11px;line-height:1.65}.limitation b{color:#d0d9e6}.limitation p{margin:3px 0 0}.infoIcon{border-radius:50%;border:1px solid #587086;color:#9bb0c1;width:19px;min-width:19px;height:19px;text-align:center;line-height:17px;font-family:serif;font-weight:bold}.technical{margin-top:21px;background:#11192a;border:1px solid #26334b;border-radius:15px;padding:25px}.techTitle{display:flex;align-items:center;gap:14px;margin-bottom:22px}.techTitle h2{margin:0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.steps>div{padding:4px 8px}.step{color:#83d6b6;font-size:10px;letter-spacing:1.2px;font-weight:720}.steps h3{font-size:14px;letter-spacing:-.3px;margin:12px 0 7px}.steps p{color:#92a1b6;font-size:12px;line-height:1.65;margin:0}.footerRow{display:flex;justify-content:space-between;align-items:center;padding:17px 4px;gap:20px}.status{font-size:11px;color:#adb8ca}.status[data-type=good]{color:#87dfb7}.status[data-type=error]{color:#ee9c9a}.linkButton{border:0;background:transparent;color:#9fe7ca;text-decoration:underline;text-underline-offset:3px;font-size:11px}footer{border-top:1px solid #253248;padding:23px 0 35px;color:#6e7e93;font-size:11px;text-align:center}@media(max-width:850px){.workspace{grid-template-columns:1fr}.app{padding:0 17px}.subtitle{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.intro{padding:42px 0 26px}.intro h1{letter-spacing:-2px}.steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:450px){.metric{padding:15px 13px}.metricValue{font-size:20px}.metricValue.smaller{font-size:16px}.panel{padding:17px}.stageWrap{min-height:250px}.stageWrap canvas{width:212px;height:212px}.questionRow{flex-direction:column}.questionRow button{padding:13px}.intro p{font-size:14px}.steps{grid-template-columns:1fr}.topbar{height:70px}}
+
+/* One-screen desktop dashboard — keeps all model controls visible. */
+@media (min-width: 901px) {
+  html, body { min-height: 100%; }
+  .app {
+    max-width: 1360px;
+    padding: 0 24px;
+    height: 100dvh;
+    min-height: 630px;
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar { height: 54px; min-height: 54px; }
+  .brand { font-size: 17px; }
+  .brandMark { font-size: 18px; padding: 6px 9px; border-radius: 9px; }
+  .capsule { padding: 7px 11px; font-size: 9px; }
+  main { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
+  .intro { max-width: none; padding: 11px 0 10px; display: flex; align-items: center; gap: 24px; min-height: 0; flex-shrink: 0; }
+  .eyebrow { display: none; }
+  .intro h1 { font-size: clamp(24px, 2.4vw, 34px); margin: 0; line-height: 1.1; letter-spacing: -1.45px; white-space: nowrap; flex-shrink: 0; }
+  .intro h1 br { display: none; }
+  .intro h1 em:before { content: ' '; }
+  .intro p { font-size: 11px; line-height: 1.5; max-width: 590px; }
+  .metrics { gap: 9px; margin-bottom: 10px; flex-shrink: 0; }
+  .metric { border-radius: 10px; padding: 9px 14px; }
+  .metricLabel { font-size: 9px; letter-spacing: 1px; margin-bottom: 3px; }
+  .metricValue { font-size: 20px; }
+  .metricValue.smaller { font-size: 17px; }
+  .workspace { flex: 1 1 auto; min-height: 0; gap: 11px; grid-template-columns: 1fr 1.13fr; }
+  .panel { min-height: 0; border-radius: 12px; padding: 13px 17px; display: flex; flex-direction: column; }
+  .panelHeader { gap: 10px; margin-bottom: 10px; flex-shrink: 0; align-items: center; }
+  .sectionNumber { width: 27px; height: 27px; min-width: 27px; border-radius: 7px; }
+  .panelHeader h2 { font-size: 16px; margin: 0 0 2px; }
+  .panelHeader p { font-size: 11px; }
+  .stageWrap { flex: 1 1 auto; min-height: 96px; }
+  .stageWrap canvas { width: auto; height: min(100%, 196px); max-width: 94%; aspect-ratio: 1/1; box-shadow: 0 8px 26px #030a1766; }
+  .stageCorner { font-size: 9px; bottom: 7px; }
+  .imageStatus { flex-shrink: 0; margin: 6px 0 8px; font-size: 10px; }
+  .configRow { flex-shrink: 0; gap: 8px; }
+  .field label { font-size: 9px; margin-bottom: 5px; }
+  .field select { font-size: 11px; padding: 8px; border-radius: 7px; }
+  .actionRow { flex-shrink: 0; gap: 8px; margin-top: 9px; }
+  .secondary, .uploadButton { font-size: 11px; padding: 9px 10px; border-radius: 8px; }
+  .promptLabel { font-size: 9px; margin: 0 0 7px; flex-shrink: 0; }
+  .suggestions { gap: 6px; margin-bottom: 14px; flex-shrink: 0; }
+  .suggestion { padding: 7px 10px; font-size: 10px; }
+  .questionRow { flex-shrink: 0; }
+  .questionRow input { padding: 10px 11px; font-size: 12px; }
+  .questionRow button { font-size: 11px; padding: 0 15px; }
+  .answerBox { flex: 1 1 auto; min-height: 75px; margin-top: 12px; padding: 15px 17px; }
+  .answerText { font-size: clamp(17px, 1.6vw, 22px); margin: 14px 0 10px; line-height: 1.4; }
+  .replyMeta { font-size: 10px; }
+  .limitation { flex-shrink: 0; margin-top: 10px; font-size: 10px; line-height: 1.45; }
+  .limitation p { margin-top: 2px; }
+  .technical { flex-shrink: 0; margin-top: 9px; padding: 9px 13px; border-radius: 10px; }
+  .techTitle { gap: 9px; margin-bottom: 4px; }
+  .techTitle h2 { font-size: 13px; }
+  .techTitle .sectionNumber { width: 22px; height: 22px; min-width: 22px; }
+  .steps { gap: 9px; }
+  .steps > div { padding: 0 5px; }
+  .step { font-size: 9px; }
+  .steps h3 { font-size: 11px; margin: 3px 0 0; }
+  .steps p { display: none; }
+  .footerRow { flex-shrink: 0; padding: 7px 4px; }
+  footer { flex-shrink: 0; padding: 7px 0 9px; font-size: 9px; }
+}
+@media (min-width:901px) and (max-height:760px) {
+  .intro { padding: 7px 0; gap: 12px; }
+  .intro h1 { font-size: 25px; }
+  .intro p { font-size: 10px; line-height: 1.35; }
+  .metrics { margin-bottom: 8px; }
+  .metric { padding: 7px 12px; }
+  .panel { padding: 10px 14px; }
+  .panelHeader { margin-bottom: 7px; }
+  .suggestions { margin-bottom: 9px; }
+  .answerBox { margin-top: 8px; padding: 11px 14px; }
+  .limitation { margin-top: 7px; }
+  .technical { padding: 6px 11px; margin-top: 7px; }
+  .techTitle { margin-bottom: 2px; }
+  .footerRow { padding: 5px 4px; }
+}
+/* On phones and narrow windows keep readable stacked panels instead of clipping. */
+@media (max-width: 900px) {
+  .app { height: auto; }
+  .workspace { grid-template-columns: 1fr; }
+  .answerBox { min-height: 185px; }
+}
+
