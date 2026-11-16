@@ -1,35 +1,12 @@
-# MiniVLM Lab — Tiny VLM Trained From Scratch, Running in Your Browser
+# SightLM - Lightweight, Browser-Native VLM trained from scratch
 
 **A real 82,387-parameter vision-language model**: three CNN layers + learned visual projector + a one-block, four-head causal Transformer. Every model weight was learned from random initialization in PyTorch. The generated neural network runs entirely in the browser through a **custom JavaScript inference implementation**, with **handwritten WebGPU / WGSL convolution and dense kernels**, plus a tested pure-JavaScript CPU fallback.
 
 This is an educational, domain-constrained MiniVLM, not a general-purpose photograph-understanding model. It recognizes **one colored circle, triangle or square** placed at **left / center / right**, and answers four question types: **color, shape, location, description**. Images outside that training distribution may produce incorrect predictions. No pretrained VLM, pretrained vision backbone, model API, WebLLM, ONNX, or server-side ML inference is used.
 
-![Browser app preview](artifacts/browser_screenshot.png)
+## Running the app (no training necessary)
 
-## Run the web app (no training necessary)
-
-### Windows
-
-1. Unzip the project.
-2. Install Python 3 if not already installed (only needed to serve files locally).
-3. Double-click **`start_windows.bat`**. The browser should open automatically to `http://127.0.0.1:8000`.
-4. Click **Ask model** or create a different shape. You can switch between `WebGPU` and `CPU` using the button at the bottom.
-
-Alternatively open a terminal in the project directory and run:
-
-```powershell
-python launch.py
-```
-
-### Mac / Linux
-
-```bash
-python3 launch.py
-```
-
-Then open **http://127.0.0.1:8000** in a recent Chrome or Edge browser. No internet connection, package installation, or model service is needed for inference. The local Python HTTP server **only serves static HTML/JS/model files**; all neural network operations execute in the browser. If you prefer, host the `web/` folder on any static website over HTTPS.
-
-**Why not open `index.html` directly with `file://`?** Browser module imports and binary model fetches are subject to file-origin restrictions. Use the tiny static server or HTTPS hosting. WebGPU also requires a secure context (HTTPS or localhost).
+Click on the netlify link for the demo.
 
 ## Architecture
 
